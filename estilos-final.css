@@ -1,0 +1,335 @@
+
+/* ESTILOS GENERALES */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f3f6fb;
+    color: #334155;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #123878;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header h2 {
+    color: #facc15;
+    font-size: 18px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+nav {
+    background-color: #2456a4;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 4px solid #facc15;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+    display: inline-block;
+    padding: 8px 5px;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN INSTITUCIONAL DE LA FLOTA */
+
+.imagen-flota {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.imagen-flota img {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* FORMULARIO DE RASTREO */
+
+#rastreo form {
+    background-color: #f1f5f9;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #dbe3f0;
+}
+
+#rastreo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #123878;
+}
+
+#rastreo input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* BOTÓN DE CONSULTA */
+
+.btn-despacho {
+    background-color: #2456a4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.btn-despacho:hover {
+    background-color: #123878;
+}
+
+.aviso-rastreo {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 12px;
+}
+
+/* RED DE SUCURSALES */
+
+.grid-sucursales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* TARJETAS DE CENTROS LOGÍSTICOS */
+
+.tarjeta-sucursal {
+    background-color: #f1f5f9;
+    border: 1px solid #dbe3f0;
+    border-top: 4px solid #facc15;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tarjeta-sucursal h3 {
+    color: #123878;
+    margin-top: 0;
+}
+
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+
+@media (max-width: 768px) {
+    .grid-sucursales {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TABLA DE TARIFAS */
+
+.tabla-tarifas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/* ENCABEZADOS */
+
+.tabla-tarifas th {
+    background-color: #123878;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #dbe3f0;
+}
+
+/* CELDAS */
+
+.tabla-tarifas td {
+    padding: 14px;
+    border: 1px solid #dbe3f0;
+}
+
+/* FILAS ALTERNADAS */
+
+.tabla-tarifas tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.tabla-tarifas tbody tr:hover {
+    background-color: #fef3c7;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.formulario-contacto {
+    background-color: #f1f5f9;
+    padding: 25px;
+    border: 1px solid #dbe3f0;
+    border-radius: 10px;
+    max-width: 650px;
+}
+
+/* ETIQUETAS */
+
+.formulario-contacto label {
+    display: block;
+    color: #123878;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+/* CAMPOS DEL FORMULARIO */
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* EFECTO AL SELECCIONAR UN CAMPO */
+
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    border-color: #2456a4;
+    outline: 2px solid #bfdbfe;
+}
+
+/* BOTÓN ENVIAR */
+
+.formulario-contacto button {
+    margin-top: 20px;
+}
+
+/* NAVEGACIÓN POR PANTALLAS */
+
+/* Ocultar las secciones inicialmente */
+main > section {
+    display: none;
+}
+
+/* Mostrar la sección seleccionada */
+main > section:target {
+    display: block;
+}
+
+/* Mostrar Inicio cuando no hay sección seleccionada */
+body:not(:has(main > section:target)) #inicio {
+    display: block;
+}
+
+/* Destacar la opción seleccionada del menú */
+body:has(#inicio:target) nav a[href="#inicio"],
+body:has(#rastreo:target) nav a[href="#rastreo"],
+body:has(#sucursales:target) nav a[href="#sucursales"],
+body:has(#tarifas:target) nav a[href="#tarifas"],
+body:has(#contacto:target) nav a[href="#contacto"] {
+    color: #facc15;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #123878;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+/* DISEÑO PARA CELULARES */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .tabla-tarifas {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #rastreo input {
+        max-width: 100%;
+    }
+}
